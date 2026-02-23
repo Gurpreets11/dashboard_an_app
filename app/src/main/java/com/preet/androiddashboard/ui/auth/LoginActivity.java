@@ -1,11 +1,11 @@
-package com.preet.androiddashboard.features.auth;
+package com.preet.androiddashboard.ui.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import com.preet.androiddashboard.features.home.MainActivity;
+import com.preet.androiddashboard.ui.home.MainActivity;
 import com.preet.androiddashboard.MainApplication;
 import com.preet.androiddashboard.R;
 import com.preet.androiddashboard.base.BaseActivity;
@@ -20,9 +20,6 @@ import com.preet.androiddashboard.viewmodel.AuthViewModel;
 import java.util.List;
 
 import androidx.activity.EdgeToEdge;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.lifecycle.ViewModelProvider;
 
 
@@ -31,6 +28,17 @@ public class LoginActivity extends BaseActivity {
     private AuthViewModel viewModel;
     private ProgressBar progressBar;
     private SwipeButtonView swipeLogin;
+
+
+    @Override
+    protected boolean showDrawer() {
+        return false;
+    }
+
+    @Override
+    protected boolean showBack() {
+        return false;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,17 +1,18 @@
-package com.preet.androiddashboard.features;
+package com.preet.androiddashboard.ui;
 
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.preet.androiddashboard.R;
 import com.preet.androiddashboard.base.BaseActivity;
 
 public class ProfileActivity extends BaseActivity {
+
+    @Override
+    protected boolean showDrawer() {
+        return false;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

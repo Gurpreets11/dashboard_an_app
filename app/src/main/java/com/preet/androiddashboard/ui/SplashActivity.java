@@ -1,4 +1,4 @@
-package com.preet.androiddashboard.features.splash;
+package com.preet.androiddashboard.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import com.preet.androiddashboard.R;
 import com.preet.androiddashboard.core.storage.PrefManager;
-import com.preet.androiddashboard.features.auth.LoginActivity;
+import com.preet.androiddashboard.ui.auth.LoginActivity;
 import com.preet.androiddashboard.viewmodel.SplashViewModel;
 
 import androidx.activity.EdgeToEdge;

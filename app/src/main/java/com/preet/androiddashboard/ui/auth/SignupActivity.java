@@ -1,4 +1,4 @@
-package com.preet.androiddashboard.features.auth;
+package com.preet.androiddashboard.ui.auth;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;

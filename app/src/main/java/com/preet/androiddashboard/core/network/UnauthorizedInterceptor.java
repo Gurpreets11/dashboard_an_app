@@ -5,7 +5,7 @@ import android.content.Intent;
 
 
 import com.preet.androiddashboard.core.storage.PrefManager;
-import com.preet.androiddashboard.features.auth.LoginActivity;
+import com.preet.androiddashboard.ui.auth.LoginActivity;
 
 import java.io.IOException;
 
