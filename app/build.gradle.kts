@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.preet.androidtemplate"
+    namespace = "com.preet.androiddashboard"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.preet.androidtemplate"
+        applicationId = "com.preet.androiddashboard"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
