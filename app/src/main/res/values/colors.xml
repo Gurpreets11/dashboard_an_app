@@ -4,19 +4,28 @@
     <color name="white">#FFFFFFFF</color>
 
 
+    <color name="drawer_selected">#E3F2FD</color>
 
+
+    <color name="toolbar_bg_start">@color/color_primary</color>
+    <color name="toolbar_bg_end">@color/color_secondary</color>
+    <color name="toolbar_text">#FFFFFF</color>   <!-- White -->
+    <color name="hamburger_color">#FFFFFF</color>
 
     <!-- ========================= -->
     <!-- Primary Health Palette -->
     <!-- ========================= -->
-    <color name="color_primary">#2ECC71</color>        <!-- Health Green -->
+    <color name="color_primary">#1B5E20</color>        <!-- Health Green -->
     <color name="color_on_primary">#FFFFFF</color>
 
-    <color name="color_secondary">#1ABC9C</color>      <!-- Teal -->
+    <color name="color_secondary">#43A047</color>      <!-- Teal -->
     <color name="color_on_secondary">#FFFFFF</color>
 
     <color name="color_tertiary">#4CAF50</color>
     <color name="color_on_tertiary">#FFFFFF</color>
+
+
+
 
     <!-- ========================= -->
     <!-- Backgrounds -->
@@ -43,7 +52,7 @@
     <!-- ========================= -->
     <!-- Swipe Button -->
     <!-- ========================= -->
-    <color name="swipe_track">#1ABC9C</color>
+    <color name="swipe_track">@color/color_primary</color>
     <color name="swipe_thumb">#FFFFFF</color>
     <color name="swipe_icon">#2ECC71</color>
 
@@ -67,6 +76,6 @@
     <!-- ========================= -->
     <!-- Splash / Gradient Colors -->
     <!-- ========================= -->
-    <color name="splash_start">#2ECC71</color>
-    <color name="splash_end">#1ABC9C</color>
+    <color name="splash_start">@color/color_primary</color>
+    <color name="splash_end">@color/color_primary</color>
 </resources>

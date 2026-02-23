@@ -40,4 +40,12 @@
         <item name="android:windowLightStatusBar">true</item>
 
     </style>
+
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/toolbar_text</item>
+    </style>
+
+
+
 </resources>
