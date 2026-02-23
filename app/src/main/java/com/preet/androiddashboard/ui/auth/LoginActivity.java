@@ -22,13 +22,11 @@ import java.util.List;
 import androidx.activity.EdgeToEdge;
 import androidx.lifecycle.ViewModelProvider;
 
-
 public class LoginActivity extends BaseActivity {
     private EditText etEmail, etPassword;
     private AuthViewModel viewModel;
     private ProgressBar progressBar;
     private SwipeButtonView swipeLogin;
-
 
     @Override
     protected boolean showDrawer() {
@@ -61,8 +59,7 @@ public class LoginActivity extends BaseActivity {
         etEmail.setText("gurpreet33@gmail.com");
         etPassword.setText("123456");
 
-        findViewById(R.id.tvSignup).setOnClickListener(v ->
-                startActivity(new Intent(this, SignupActivity.class)));
+        findViewById(R.id.tvSignup).setOnClickListener(v -> startActivity(new Intent(this, SignupActivity.class)));
 
         progressBar = findViewById(R.id.progressBar);
 
@@ -79,8 +76,7 @@ public class LoginActivity extends BaseActivity {
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
 
-        if (!ValidationUtils.isEmailValid(email) ||
-                !ValidationUtils.isPasswordValid(password)) {
+        if (!ValidationUtils.isEmailValid(email) || !ValidationUtils.isPasswordValid(password)) {
             AppToast.getInstance().show(this, "Invalid credentials");
 //            AppAlertDialog.showMessage(this, "Error", "Invalid credentials");
             resetSwipe();
@@ -100,12 +96,12 @@ public class LoginActivity extends BaseActivity {
 
                 case SUCCESS:
                     List<LoginData> users = result.data.getData();
-                        swipeLogin.showSuccess();
-                        AppToast.getInstance().show(this, "Login Success");
-                        String token = users.get(0).getToken();
-                        PrefManager.getInstance(this).saveToken(token);
-                        startActivity(new Intent(this, MainActivity.class));
-                        finish();
+                    swipeLogin.showSuccess();
+                    AppToast.getInstance().show(this, "Login Success");
+                    String token = users.get(0).getToken();
+                    PrefManager.getInstance(this).saveToken(token);
+                    startActivity(new Intent(this, MainActivity.class));
+                    finish();
                     break;
                 case ERROR:
                     resetSwipe();

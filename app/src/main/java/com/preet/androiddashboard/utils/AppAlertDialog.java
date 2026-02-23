@@ -1,6 +1,5 @@
 package com.preet.androiddashboard.utils;
 
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -15,10 +14,8 @@ import androidx.appcompat.app.AlertDialog;
 public class AppAlertDialog {
 
     public static void showMessage(Context context, String title, String message) {
-
         new AlertDialog.Builder(context).setTitle(title).setMessage(message).setPositiveButton("OK", null).setCancelable(false).show();
     }
-
 
     public interface OnPositiveClickListener {
         void onClick();
@@ -40,7 +37,7 @@ public class AppAlertDialog {
                 .show();
     }
 
-    public static void showConfirmDialog(Context context, String title, String message, String positiveText, String negativeText, OnPositiveClickListener listener){
+    public static void showConfirmDialog(Context context, String title, String message, String positiveText, String negativeText, OnPositiveClickListener listener) {
         new AlertDialog.Builder(context)
                 .setTitle(title)
                 .setMessage(message)

@@ -96,6 +96,33 @@ The goal is to keep the code scalable, maintainable, and easy to extend.
    - Moved API validation responsibility to Repository
    - Improved overall scalability
 
+---
+
+## ✨ Update – Drawer, Fintech Toolbar & UX Enhancements
+
+### 🚀 Added
+- Navigation Drawer with dynamic enable/disable support
+- Drawer Header (User name + email)
+- Settings & Logout menu options
+- Custom `AppAlertDialog` utility for reusable confirmation dialogs
+- Modern back handling using `OnBackPressedDispatcher`
+- Fintech styled gradient Toolbar with rounded corners
+- Profile icon in AppBar
+- Custom animated Exit Confirmation Dialog
+
+### 🎨 Improved
+- Hamburger ↔ Back arrow behavior based on screen type
+- Highlight selected drawer menu item
+- Consistent UI structure via `BaseActivity`
+- Clean reusable project architecture
+
+### 🔧 Refactored
+- Centralized dialog logic
+- Removed deprecated `onBackPressed()` usage
+- Improved navigation handling & exit flow
+
+---
+
 ## 🏗 Current Flow
 
 	Activity
@@ -119,8 +146,11 @@ The goal is to keep the code scalable, maintainable, and easy to extend.
    - Token storage implemented
    - Login flow working
    - Invalid login error handled correctly
-   
-   
+
 ### 👨‍💻 Project Type
 
 	Android App (Java) – MVVM + Repository Pattern   
+
+
+---
+
